@@ -9,7 +9,7 @@ from flask import Flask, jsonify, render_template
 #################################################
 connect_string = "sqlite:///Grocery_tables.db"
 
-engine = create_engine(connect_string)
+
 
 #################################################
 # Flask Setup
@@ -21,8 +21,15 @@ application = Flask(__name__)
 # Flask Routes
 #################################################
 
+
 @application.route("/")
-def welcome():
+def welcome(): 
+    return render_template("index.html")  
+
+
+@application.route("/api/foods")
+def api():
+    engine = create_engine(connect_string)
     session = Session(engine)
 
     sql = f"""
@@ -31,9 +38,11 @@ def welcome():
     """
 
     df = pd.read_sql(sql, session.connection())
+    print(df)
 
     session.close()  
-    return df.to_dict(orient="records")
+    return jsonify(df.to_dict(orient="records"))
+
 
 if __name__ == '__main__':
-    welcome
+    application.run(debug=True)

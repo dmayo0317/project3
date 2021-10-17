@@ -7,7 +7,7 @@ from flask import Flask, jsonify, render_template
 #################################################
 # Database Setup
 #################################################
-connect_string = "sqlite:///Grocery_tables.db"
+connect_string = "sqlite:///Grocery_database.db"
 
 
 
@@ -33,8 +33,8 @@ def api():
     session = Session(engine)
 
     sql = f"""
-    SELECT * FROM Whole_foods_database 
-    WHERE Type = 'Pizza'
+    SELECT * FROM grocery_table 
+    WHERE Type = 'Mac & Cheese'
     """
 
     df = pd.read_sql(sql, session.connection())

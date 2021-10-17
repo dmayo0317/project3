@@ -10,7 +10,7 @@ def grocery_type(type):
     session = Session(engine)
 
     sql = f"""
-    SELECT * FROM Whole_foods_database 
+    SELECT * FROM grocery_table
     WHERE Type = '{type}'
     """  
         
@@ -19,27 +19,66 @@ def grocery_type(type):
     session.close()  
     return df.to_dict(orient="records") 
 
-
-def grocery_store(type, store='all'):
+def grocery_brand(brand):
     session = Session(engine)
 
-    if store == 'all':
-
-        sql = f"""
-        SELECT * FROM Whole_foods_database 
-        WHERE Type = '{type}'
-        """  
-    else:
-        sql = f"""
-        SELECT * FROM Whole_foods_database 
-        WHERE Type = '{type}'
-        And store = '{store}'
-        """    
+    sql = f"""
+    SELECT * FROM grocery_table
+    WHERE Type = '{brand}'
+    """  
         
     df = pd.read_sql(sql, session.connection())
 
     session.close()  
-    return df.to_dict(orient="records")    
+    return df.to_dict(orient="records")
+
+def grocery_store(store):
+    session = Session(engine)
+
+    sql = f"""
+    SELECT * FROM grocery_table
+    WHERE Type = '{store}'
+    """  
+        
+    df = pd.read_sql(sql, session.connection())
+
+    session.close()  
+    return df.to_dict(orient="records")  
+
+def grocery_price(price):
+    session = Session(engine)
+
+    sql = f"""
+    SELECT * FROM grocery_table
+    WHERE Type = '{price}'
+    """  
+        
+    df = pd.read_sql(sql, session.connection())
+
+    session.close()  
+    return df.to_dict(orient="records")             
+
+# Below is if we want to select store/type
+# def grocery_store(type, store='all'):
+#     session = Session(engine)
+
+#     if store == 'all':
+
+#         sql = f"""
+#         SELECT * FROM grocery_table
+#         WHERE Type = '{type}'
+#         """  
+#     else:
+#         sql = f"""
+#         SELECT * FROM grocery_table 
+#         WHERE Type = '{type}'
+#         And store = '{store}'
+#         """    
+        
+#     df = pd.read_sql(sql, session.connection())
+
+#     session.close()  
+#     return df.to_dict(orient="records")    
 
 
 

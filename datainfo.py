@@ -2,7 +2,7 @@ from sqlalchemy import create_engine
 import pandas as pd
 from sqlalchemy.orm import Session
 
-connect_string = "sqlite:///Grocery_tables.db"
+connect_string = "sqlite:///Grocery_database.db"
 
 engine = create_engine(connect_string)
 

@@ -1,12 +1,12 @@
 
-function init() {
-    /* data route */
-    var url = "/api/foods";
-    d3.json(url).then((data) => {
-    console.log(data);
-    })
-}        
-init();
+// function init() {
+//     /* data route */
+//     var url = "api/foods";
+//     d3.json(url).then((data) => {
+//     console.log(data);
+//     })
+// }        
+// init();
 
 /*!
     * Start Bootstrap - SB Admin v7.0.3 (https://startbootstrap.com/template/sb-admin)

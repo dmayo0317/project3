@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <select id="dd">
+
+    </select>
+
+    <canvas id="chart_0">
+
+    </canvas>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+    <script>
+        var dd = d3.select("#dd")
+        d3.json("/api/v1.0/all_types").then(data => {
+            console.log(data)
+
+            data.forEach(element => {
+                dd.append("option").text(element.Type).property("value", element.Type)
+            });
+            getType();
+        })
+        
+        function getType() {
+            var query = dd.property("value")
+            d3.json(`/api/v1.0/type_query/${query}`).then(data => {
+                console.log(data)
+
+                var chart_data = {
+                    labels: data.map(obj => obj.Name),
+                    datasets: [{
+                        label: "Walmart",
+                        backgroundColor: "rgba(0,114,206,0.2)",
+                        borderColor: "rgba(0,114,206,1)",
+                        borderWidth: 2,
+                        hoverBackgroundColor: "rgba(0,114,206,0.4)",
+                        hoverBorderColor: "rgba(0,114,206,1)",
+                        data: data.slice(0,5).map(obj => parseFloat(obj.Price.replace("$",""))),
+                    }, 
+                    {
+                        label: "Whole Foods",
+                        backgroundColor: "rgba(0,103,75,0.2)",
+                        borderColor: "rgba(0,103,75,1)",
+                        borderWidth: 2,
+                        hoverBackgroundColor: "rgba(0,103,75,0.4)",
+                        hoverBorderColor: "rgba(0,103,75,1)",
+                        data: [0,0,0,0,0].concat(data.slice(5,10).map(obj => parseFloat(obj.Price.replace("$",""))))
+                    }
+                ]
+                };
+
+                var option = {
+                    scales: {
+                        yAxes: [{
+                            stacked: false,
+                            gridLines: {
+                                display: true,
+                                color: "rgba(255,99,132,0.2)"
+                            }
+                        }],
+                        xAxes: [{
+                            gridLines: {
+                                display: false
+                            }
+                        }]
+                    }
+                };
+
+                var ctx = document.getElementById("chart_0");
+                var chart = Chart.Bar(ctx, {
+                    type: 'bar',
+                    options: option,
+                    data: chart_data
+                });
+
+                dd.on("change", () => restyleType(chart));
+            })
+        }
+
+        function restyleType(chart) {
+            var query = dd.property("value")
+            d3.json(`/api/v1.0/type_query/${query}`).then(data => {
+                chart.data.labels = data.map(obj => obj.Name);
+                chart.data.datasets[0].data = data.slice(0,5).map(obj => parseFloat(obj.Price.replace("$","")));
+                chart.data.datasets[1].data = [0,0,0,0,0].concat(data.slice(5,10).map(obj => parseFloat(obj.Price.replace("$",""))));
+                chart.update();
+            })
+        }
+    </script>
+
+</body>
+
+</html>

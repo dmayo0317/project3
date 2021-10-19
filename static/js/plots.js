@@ -44,13 +44,29 @@ function getType() {
                     stacked: false,
                     gridLines: {
                         display: true,
-                        color: "rgba(255,99,132,0.2)"
+                        color: "rgba(169,169,169,0.2)"
                     }
                 }],
                 xAxes: [{
                     gridLines: {
                         display: false
-                    }
+                    },
+                    barPercentage: 1.5,
+                    
+                    ticks: {
+                        fontSize: 8,
+                        mirror: true,
+                        padding: 5,
+                        maxRotation: 0,
+                        minRotation: 0,
+                        callback: function(label) {
+                          if (/\s/.test(label)) {
+                            return label.match(/\b[\w']+(?:[^\w\n]+[\w']+){0,1}\b/g);
+                          }else{
+                            return label;
+                          }              
+                        }
+                      }
                 }]
             }
         };
@@ -58,7 +74,7 @@ function getType() {
         var ctx = document.getElementById("chart_0");
         var chart = Chart.Bar(ctx, {
             type: 'bar',
-            options: option,
+            options: option, reponsive: true,
             data: chart_data
         });
 
@@ -75,5 +91,4 @@ function restyleType(chart) {
         chart.update();
     })
 }
-
 // End of Random Bar Chart

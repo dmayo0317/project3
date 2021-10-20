@@ -1,5 +1,4 @@
-
-
+// Plots function
 function buildCharts(sample) {
 
 
@@ -102,7 +101,7 @@ function buildCharts(sample) {
     });
 }
 
-//This code runs on startup
+//Setting up the selector
 d3.json("/api/v1.0/price_select/").then(function (data) {
 
     var dropdown = d3.select('#selDataset')
@@ -110,20 +109,10 @@ d3.json("/api/v1.0/price_select/").then(function (data) {
         dropdown.append('option').property('value', sample).text(sample)
     });
 
-    buildCharts()
+    buildCharts(sample)
 
 });
 
 
 
 
-// Beginning of Random Bar Chart
-// var pp = d3.select("#selDataset")
-// d3.json("/api/v1.0/price_select/").then(data => {
-//     console.log("test", data)
-
-//     data.forEach(element => {
-//         pp.append("option").text(element.Type).property("value", element.Type)
-//     });
-//     getType();
-// })

@@ -64,12 +64,35 @@ def filter_type(query):
     df = pd.concat([df_wm, df_wf], axis=0)
 
     session.close()  
-    return df.to_dict(orient="records")       
+    return df.to_dict(orient="records")
 
 
+
+## Query for Pricing
+def price(select):
+    session = Session(engine)
+
+    select_int = int(select)
+    betweens = ["BETWEEN 0 AND 5", "BETWEEN 5 AND 10", "BETWEEN 10 AND 15"]
+    current_between = betweens[select_int]
+    
+    sql = f'''
+    SELECT Price, Name, Type, Store, Brand
+    FROM grocery_table 
+    WHERE Price {current_between}
+    Order By Price ASC
+    '''
+
+    print(sql)
+    
+    df= pd.read_sql(sql, session.connection())
+    session.close()
+    results = df.to_dict(orient="records")    
+    return results       
    
 
 
-
 if __name__ == '__main__':
-    results =  grocery_brand("Kraft")
+    results =  price(2)
+    print(results)
+    

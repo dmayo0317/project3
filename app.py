@@ -39,6 +39,9 @@ def show_apis():
         f'<a href="/api/v1.0/price">/api/v1.0/price</a><br/>' 
         f'<a href="/api/v1.0/type">/api/v1.0/type</a><br/>' 
         f'<a href="/api/v1.0/all_types">/api/v1.0/all_types</a><br/>' 
+        f'<a href="/api/v1.0/price_select/0">/api/v1.0/price_select/0</a><br/>'
+        f'<a href="/api/v1.0/price_select/1">/api/v1.0/price_select/1</a><br/>'
+        f'<a href="/api/v1.0/price_select/2">/api/v1.0/price_select/2</a><br/>'
         f'<a href="/"><h4>Back</h4></a><br/>' 
     )     
 
@@ -59,6 +62,11 @@ def grocery_all_types():
 @application.route("/api/v1.0/type_query/<query>")
 def type_query(query):
     return jsonify(info.filter_type(query))
+
+# This is our selector for our drop down pizza/macaroni/ramen (don't remove)
+@application.route("/api/v1.0/price_select/<select>")
+def price_type(select):
+    return jsonify(info.price(select))
 
 
 if __name__ == '__main__':

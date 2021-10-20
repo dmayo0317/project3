@@ -19,7 +19,7 @@ The Project 3: Feed Jeff Team decided to create a prototype website to help Jeff
 ## Data Collection
 We started with a scrape of the Walmart and WholeFoods databases. After scraping for our desired food items we ended up with 206 items for Jeff to choose from. We then took the data from the different websites and gathered them into an SQLite database. We split the columns using <b> Brand </b>, <b> Name </b>, <b> Price </b> , <b> Type </b>, and <b> Store </b> so that Jeff would be able to specifically choose which products he'd like to see. 
 
-Walmart Source URL: https://www.walmart.com/search?q=pizza&page=2&affinityOverride=store_led
+Walmart Source URL: https://www.walmart.com/browse/shop-by-brand/food-grocery/3734780_7455738
 
 WholeFoods Source URL: 
 

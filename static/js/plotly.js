@@ -112,7 +112,3 @@ d3.json("/api/v1.0/price_select/").then(function (data) {
     buildCharts(sample)
 
 });
-
-
-
-

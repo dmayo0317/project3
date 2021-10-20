@@ -1,9 +1,11 @@
-<h1 align="center"> Project 3: Feed Jeff </h1>
+<h1 align="center"> CDMT Team: Project Feed Jeff </h1>
 
 ![guy-with-ramen](readme-img/ramen-guy.png)
 
 ## Summary
-A college budget is no joke, especially when you'e a freshman living in the dorms, like Jeff here. Jeff is currently attending the University of Texas at San Antonio and is confined to a tiny dorm room with no toaster, a little mini fridge that barely works, and a microwave that’s older than his parents. Jeff often wonders, "How can I stretch my $20 dollars to next week?" 
+Jeff, a lovely young gentleman has just started his first semester at University of Texas at San Antonio (UTSA). Like many first-time students, a college budget is no joke, especially when you'e a freshman living in the dorms, like Jeff here. Jeff is currently attending UTSA and is confined to a tiny dorm room with no toaster, a little mini fridge that barely works, and a microwave that’s older than his parents. Jeff often wonders, "How can I stretch my $20 dollars to next week?" 
+
+By saying the magic words, "Like a good neightbor, CDMT is there!"
 
 The Project 3: Feed Jeff Team decided to create a prototype website to help Jeff sruvive on his limited budget! Our initial website is strictly a way of measuring different prices of the most essential items for every students' diet: <b> Ramen </b>, <b> Pizza </b>, and <b> Mac and Cheese </b>. This prototype is currently only designed to handle two different store databases: <b> Walmart </b> located at 11210 Potranco Rd, San Antonio, TX 78253 and <b> WholeFoods </b> located at (INSERT ADDRESS HERE). We are in very heated debates with other stores that all currently in a bidding war to use our website and boost their business. 
 

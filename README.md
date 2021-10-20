@@ -24,8 +24,8 @@ After using Flask to create an API we used Heroku to deploy the webpage to the c
 ## Creating Visualizations
 Project: Feed Jeff decided to use a combination of plotly and charts.js to create the visualizations on the webpage. Our team believe that utilizing these two libraries in combination would be the best way at achieving the most effective visualizations for Jeff to make his selections. 
 
-<h1 align="center"> Limitations </h1>
-* Unable to scrape more websites due to: 
+## Limitations 
+* Unable to scrape more websites due to:
   * Time Constraints 
   * Robot wall that protected against scraping 
   * API's had payment or authority requirements
@@ -33,9 +33,15 @@ Project: Feed Jeff decided to use a combination of plotly and charts.js to creat
 
 <h1 align="center">Project 3 Team</h1>
 
-<b>
+  <b>
 &emsp;  - Celenia Chapa
 &emsp;  - Tyler Cutrer
-&emsp;  - Matthew Villareal
-&emsp;  - Daniella Mayoral
+&emsp;  - Taylor Lyons
+&emsp;  - Samantha Perez
   </b>
+
+(Insert URL here) 
+
+<p align="center">
+<img src= "https://media.giphy.com/media/C3O6NJeqH9nKjKrAJy/giphy.gif"  width = "300" height ="300">
+</p>

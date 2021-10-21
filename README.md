@@ -7,8 +7,7 @@ Jeff, a lovely young gentleman has just started his first semester at University
 
 By saying the magic words, "Like a good neighbor, CDMT is there!" Out of thin air comes **C**ool **D**ata **M**anagement **T**eam!
 
-The CDMT Team came together to understand Jeff's request. 
-* List request included the following:
+The CDMT Team came together to understand Jeff's request and design the webpage to his (and other college student's needs)
 * List of Stores near UTSA
 * List of common Foods most College students eat 
 * List of Brands

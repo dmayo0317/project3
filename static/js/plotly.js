@@ -1,3 +1,5 @@
+let dropdownPrice = d3.select("#selDataset");
+
 // Plots function
 function buildCharts(sample) {
 
@@ -67,7 +69,7 @@ function buildCharts(sample) {
 
 
         var barLayout = {
-            title: "Brands Pricing Comparison ",
+            // title: "Brands Pricing Comparison",
             margin: { t: 30, l: 150 },
             xaxis: {
                 title: 'Price',
@@ -131,7 +133,7 @@ function buildCharts(sample) {
             yaxis: {
             //   range: [0, 8]
             },
-            title:'Type Store Comparison'
+            // title:'Type Store Comparison'
           };
 
         var data = [trace1, trace2];
@@ -141,14 +143,14 @@ function buildCharts(sample) {
     });
 }
 
-//Setting up the selector
-d3.json("/api/v1.0/price_select/ ").then(function (data) {
+// //Setting up the selector
+// d3.json("/api/v1.0/price_select/").then(function (data) {
 
-    var dropdown = d3.select('#selDataset')
-    data.price.forEach(sample => {
-        dropdown.append('option').property('value', sample).text(sample)
-    });
+//     var dropdown = d3.select('#selDataset')
+//     data.price.forEach(sample => {
+//         dropdown.append('option').property('value', sample).text(sample)
+//     });
 
-    buildCharts(sample)
+//     buildCharts(sample)
 
-});
+// });

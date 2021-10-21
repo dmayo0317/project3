@@ -26,9 +26,14 @@ application = Flask(__name__)
 def welcome(): 
     return render_template("index.html", food_info=info)
 
-@application.route("/test")
-def test(): 
-    return render_template("test.html")      
+@application.route("/about")
+def about(): 
+    return render_template("about.html", food_info=info)
+
+@application.route("/disclaimer")
+def disclaimer(): 
+    return render_template("disclaimer.html", food_info=info)    
+    
 
 @application.route("/api/v1.0")
 def show_apis():

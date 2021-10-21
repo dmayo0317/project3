@@ -5,10 +5,16 @@
 ## Summary
 Jeff, a lovely young gentleman has just started his first semester at University of Texas at San Antonio (UTSA). Like many first-time students, a college budget is no joke, especially when you'e a freshman living in the dorms, like Jeff here. Jeff is currently attending UTSA and is confined to a tiny dorm room with no toaster, a little mini fridge that barely works, and a microwave that’s older than his parents. Jeff often wonders, "How can I stretch my $20 dollars to next week?" 
 
-By saying the magic words, "Like a good neightbor, CDMT is there!"
+By saying the magic words, "Like a good neighbor, CDMT is there!" Out of thin air comes **C**ool **D**ata **M**anagement **T**eam!
 
-The Project 3: Feed Jeff Team decided to create a prototype website to help Jeff sruvive on his limited budget! Our initial website is strictly a way of measuring different prices of the most essential items for every students' diet: <b>Ramen</b>, <b>Pizza</b>, and <b>Mac and Cheese</b>. This prototype is currently only designed to handle two different store databases: <b>Walmart</b> located at 11210 Potranco Rd, San Antonio, TX 78253 and <b>WholeFoods</b> located at 255 E Basse Rd
-San Antonio, TX. We are in very heated debates with other stores that all currently in a bidding war to use our website and boost their business. 
+The CDMT Team came together to understand Jeff's request. 
+* List request included the following:
+* List of Stores near UTSA
+* List of common Foods most College students eat 
+* List of Brands
+* List of Price
+
+With a wave of our wand "bippity boppity boo" outcomes our page. 
 
 <p align="center">
 <img src= "http://cdn.abclocal.go.com/content/wpvi/images/cms/513058_1280x720.jpg"  width="300" height="200">

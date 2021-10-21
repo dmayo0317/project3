@@ -7,18 +7,13 @@ Jeff, a lovely young gentleman has just started his first semester at University
 
 By saying the magic words, "Like a good neighbor, CDMT is there!" Out of thin air comes **C**ool **D**ata **M**anagement **T**eam!
 
-The CDMT Team came together to understand Jeff's request and design the webpage to his (and other college student's needs)
+The CDMT Team came together to understand Jeff's request and design the webpage to his (and other college student's) needs
 * List of Stores near UTSA
 * List of common Foods most College students eat 
 * List of Brands
 * List of Price
 
 With a wave of our wand "bippity boppity boo" outcomes our page to help students find the best priced meal for their budgets!
-
-<p align="center">
-<img src= "http://cdn.abclocal.go.com/content/wpvi/images/cms/513058_1280x720.jpg"  width="300" height="200">
-<img src= "http://blog.logomyway.com/wp-content/uploads/2017/02/walmart-store.jpg" width="350" height="200">
-</p>
                                                                                                                                     
 <h1 align="center"> Methodology </h1>
 
@@ -28,6 +23,11 @@ We started with a scrape of the Walmart and WholeFoods databases. After scraping
 Walmart Source URL: https://www.walmart.com/browse/shop-by-brand/food-grocery/3734780_7455738
 
 WholeFoods Source URL: https://www.wholefoodsmarket.com/products
+
+<p align="center">
+<img src= "http://cdn.abclocal.go.com/content/wpvi/images/cms/513058_1280x720.jpg"  width="300" height="200">
+<img src= "http://blog.logomyway.com/wp-content/uploads/2017/02/walmart-store.jpg" width="350" height="200">
+</p>
 
 ## Creating Visualizations
 After initializing a Flask-powered API, we used Heroku to deploy the webpage to the cloud so that Jeff would be able to use the prototype product as soon as possible. Project: Feed Jeff decided to use a combination of <b>plotly</b> and <b>charts.js</b> to create the visualizations on the webpage. Our team believes that utilizing these two libraries in combination would be the best way of achieving the most effective visualizations for Jeff to make his selections. 

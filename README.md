@@ -34,6 +34,8 @@ After initializing a Flask-powered API, we used Heroku to deploy the webpage to 
 
 <b> No Need to Wait Any Longer! It's Time to Showcase our Protoype App! </b>
 
+Website: https://store-foods.herokuapp.com/
+
 <p align="Center">
 <img src= "https://i.pinimg.com/originals/82/13/bc/8213bcde03012743ace810fe2de364a9.jpg"  width="300" height="400">
 <img src= "https://thedogman.net/wp-content/uploads/2020/10/corgi-8.1.jpg?x50647"  width="300" height="400">
@@ -62,4 +64,3 @@ After initializing a Flask-powered API, we used Heroku to deploy the webpage to 
   - Daniella Mayoral
   </b>
 <br clear="center"/>
-Website: https://store-foods.herokuapp.com/

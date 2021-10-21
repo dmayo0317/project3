@@ -33,6 +33,15 @@ WholeFoods Source URL: https://www.wholefoodsmarket.com/products
 ## Creating Visualizations
 After initializing a Flask-powered API, we used Heroku to deploy the webpage to the cloud so that Jeff would be able to use the prototype product as soon as possible. Project: Feed Jeff decided to use a combination of <b>plotly</b> and <b>charts.js</b> to create the visualizations on the webpage. Our team believes that utilizing these two libraries in combination would be the best way of achieving the most effective visualizations for Jeff to make his selections. 
 
+<b> No Need to Wait Any Longer! It's Time to Showcase our Protoype App! </b>
+
+<p align="Center">
+<img src= "https://i.pinimg.com/originals/82/13/bc/8213bcde03012743ace810fe2de364a9.jpg"  width="300" height="400">
+<img src= "https://thedogman.net/wp-content/uploads/2020/10/corgi-8.1.jpg?x50647"  width="300" height="400">
+</p>
+
+<h1 align="center"> Conclusion </h1>
+
 ## Limitations 
 * Unable to scrape more websites due to:
   * Time Constraints 
@@ -46,11 +55,11 @@ After initializing a Flask-powered API, we used Heroku to deploy the webpage to 
   * Create a Machine Learning Enviroment in order to better log Jeff's choices and provide suggestions
 
 <h1 align="center">Project 3 Team</h1>
-<img src= "https://media.giphy.com/media/C3O6NJeqH9nKjKrAJy/giphy.gif" align="left" width="250px" padding="10px"> No Need to Wait Any Longer! It's Time to Showcase our Protoype App!</br></br>
+<img src= "https://media.giphy.com/media/C3O6NJeqH9nKjKrAJy/giphy.gif" align="left" width="300px" length="300px" padding="10px">
   <b>
   - Celenia Chapa
   - Tyler Cutrer
   - Matthew Villareal
   - Daniella Mayoral
   </b>
-<br clear="left"/>
+<br clear="center"/>

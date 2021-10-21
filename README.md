@@ -14,7 +14,7 @@ The CDMT Team came together to understand Jeff's request.
 * List of Brands
 * List of Price
 
-With a wave of our wand "bippity boppity boo" outcomes our page. 
+With a wave of our wand "bippity boppity boo" outcomes our page to help students find the best priced meal for their budgets!
 
 <p align="center">
 <img src= "http://cdn.abclocal.go.com/content/wpvi/images/cms/513058_1280x720.jpg"  width="300" height="200">

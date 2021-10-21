@@ -144,13 +144,15 @@ function buildCharts(sample) {
 }
 
 // //Setting up the selector
-// d3.json("/api/v1.0/price_select/").then(function (data) {
+d3.json("/api/v1.0/price_select/").then(function (data) {
 
-//     var dropdown = d3.select('#selDataset')
-//     data.price.forEach(sample => {
-//         dropdown.append('option').property('value', sample).text(sample)
-//     });
+    var dropdown = d3.select('#selDataset')
+    data.price.forEach(sample => {
+        dropdown.append('option').property('value', sample).text(sample)
+    });
 
-//     buildCharts(sample)
+    buildCharts(sample)
 
-// });
+});
+
+buildCharts(0);

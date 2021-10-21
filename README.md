@@ -40,7 +40,7 @@ After initializing a Flask-powered API, we used Heroku to deploy the webpage to 
   * Create a Machine Learning Enviroment in order to better log Jeff's choices and provide suggestions
 
 <h1 align="center">Project 3 Team</h1>
-<img src= "https://media.giphy.com/media/C3O6NJeqH9nKjKrAJy/giphy.gif" align="left" width="300px" padding="10px"></br></br>
+<img src= "https://media.giphy.com/media/C3O6NJeqH9nKjKrAJy/giphy.gif" align="left" width="300px" padding="10px"> No Need to Wait Any Longer! It's Time to Showcase our Protoype App!</br></br>
   <b>
   - Celenia Chapa
   - Tyler Cutrer
